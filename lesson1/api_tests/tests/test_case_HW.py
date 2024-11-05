@@ -1,8 +1,8 @@
 from http.client import responses
 
-from lesson1.api_tests.case.pom.case import create_case
-from lesson1.api_tests.case.models.case import Case
-from lesson1.api_tests.case.data.case import create_case_dict
+from lesson1.api_tests.services.case.pom import create_case
+from lesson1.api_tests.services.case.data import create_case_dict
+from lesson1.api_tests.services.case.models import Case
 import lesson1.api_tests.utils.api_response
 from requests import request
 
