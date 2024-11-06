@@ -14,6 +14,7 @@ def chrome_options():
 @pytest.fixture
 def driver(chrome_options):
     driver = webdriver.Chrome(options=chrome_options)
+    # driver.implicitly_wait(20)
     return driver
 
 @pytest.fixture

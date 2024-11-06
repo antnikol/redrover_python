@@ -1,10 +1,6 @@
 import pytest
 from playwright.sync_api import Page, expect
 
-def test_visible_after_with_explicit_waits_with_playwright(page: Page):
-    page.goto('https://demoqa.com/dynamic-properties')
-    expect(page.locator('//button[text()="Visible After 5 Seconds"]')).to_have_text('Visible After 5 Seconds')
-
 def test_check_site_registration(page: Page):
     page.goto('https://victoretc.github.io/selenium_waits/')
     expect(page.locator('h1')).to_have_text('Практика с ожиданиями в Selenium')
